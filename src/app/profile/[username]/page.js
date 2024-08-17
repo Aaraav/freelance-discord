@@ -133,7 +133,7 @@ const HomePage = async ({ params }) => {
 
   return (
     <div className="min-h-screen flex items-center justify-center">
-      <div className="bg-gray-800 rounded-lg shadow-lg text-white max-w-lg w-[400px] h-[520px]">
+      <div className="bg-gray-800 rounded-lg shadow-lg text-white max-w-lg w-[400px] h-[500px]">
         {userData ? (
           <div className="flex flex-col items-center">
            {userDetails.banner ? (
@@ -141,7 +141,7 @@ const HomePage = async ({ params }) => {
     src={`https://cdn.discordapp.com/banners/${userDetails.id}/${userDetails.banner}.png?size=512`}
     alt="User Banner"
     width={700}
-    height={200}
+    height={150}
     style={{
       maxWidth: '100%',
       height: 'auto',
@@ -154,7 +154,7 @@ const HomePage = async ({ params }) => {
     }}
   />
 ) : (
-  <div className="w-full h-52 bg-gray-600 rounded-lg mb-4 flex items-center justify-center text-white">
+  <div className="w-full h-40 bg-gray-600 rounded-lg mb-4 flex items-center justify-center text-white">
     No Banner Available
   </div>
 )}
@@ -192,7 +192,7 @@ const HomePage = async ({ params }) => {
             {displayRoles(userRoles)}
 
            
-            <div className='w-[100%] ml-7 mt-2'>
+            <div className='w-[100%] ml-7 mt-5 text-white'>
             <Input placeholder={`msg ${userDetails.username}`}/>
             </div>
           </div>
