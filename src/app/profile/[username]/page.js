@@ -148,10 +148,10 @@ const HomePage = async ({ params }) => {
       borderRadius: '8px',
     }}
     className="rounded-lg mb-4"
-    onError={(e) => {
-      e.target.onerror = null;
-      e.target.src = '/fallback-banner.png'; 
-    }}
+    // onError={(e) => {
+    //   e.target.onerror = null;
+    //   e.target.src = '/fallback-banner.png'; 
+    // }}
   />
 ) : (
   <div className="w-full h-40 bg-gray-600 rounded-lg mb-4 flex items-center justify-center text-white">
